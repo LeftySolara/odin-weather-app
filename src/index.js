@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+import CityForm from "./components/cityForm";
 import WeatherDisplay from "./components/forecast";
 
 // TODO: Implement display of current weather
@@ -9,6 +10,9 @@ import WeatherDisplay from "./components/forecast";
 // TODO: Change look of page based on current weather
 
 ReactDOM.render(
-  <WeatherDisplay cityID="5809844" />,
+  <div>
+    <WeatherDisplay cityID="5809844" />
+    <CityForm />
+  </div>,
   document.getElementById("root")
 );
